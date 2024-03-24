@@ -185,6 +185,7 @@ export default {
 .mobile{
     display: none;
 }
+    
 @media only screen and (max-width: 600px){
     .mobile{
         display: block;
