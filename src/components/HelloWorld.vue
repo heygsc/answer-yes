@@ -18,6 +18,11 @@
         </div>
 
         <div v-if="step === 2" class="end">果然，你就承认吧</div>
+
+        <div v-if="mobileTip" class="mobile">
+            建议使用电脑打开，才有鼠标悬停效果哦~
+            <button @click="mobileTip=false">ok</button>
+        </div>
     </div>
 </template>
 
@@ -31,6 +36,7 @@ export default {
             step: 0,
             displayValue: '',
             thinkShow: [0,0,0,1],
+            mobileTip: true,
         }
     },
     methods: {
@@ -174,5 +180,25 @@ export default {
     transform: translateX(-50%);
     font-size: 3rem;
     color: red;
+}
+
+.mobile{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    .mobile{
+        display: block;
+        width: 200px;
+        height: 100px;
+        padding: 30px;
+        font-size: 20px;
+        text-align: center;
+        background-color: white;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+    }
 }
 </style>
