@@ -9,3 +9,6 @@
 # demo预览
 
 ![demo](https://github.com/heygsc/answer-yes/blob/main/test.gif)
+
+### 欢迎star⭐
+### 欢迎关注[作者](https://github.com/heygsc)
